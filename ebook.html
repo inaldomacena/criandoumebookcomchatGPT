@@ -1,0 +1,207 @@
+titulo do ebook CSS: Dominando o Estilo das Galáxias
+Guia Essencial de Seletores CSS
+O CSS (Cascading Style Sheets) é uma linguagem usada para descrever a apresentação de um documento escrito em HTML ou XML. Seletores CSS são usados para "selecionar" os elementos HTML que queremos estilizar. Aqui estão os principais seletores CSS com exemplos práticos.
+
+1. Seletor de Elemento
+Descrição: Seleciona todos os elementos de um tipo específico.
+
+Exemplo:
+
+html
+Copiar código
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  p {
+    color: blue;
+  }
+</style>
+</head>
+<body>
+  <p>Este parágrafo será azul.</p>
+  <p>Este também será azul.</p>
+</body>
+</html>
+Sugestão: Use seletores de elementos para aplicar estilos básicos e consistentes a todos os elementos de um tipo.
+
+2. Seletor de Classe
+Descrição: Seleciona todos os elementos que possuem um atributo de classe específico. As classes começam com um ponto (.).
+
+Exemplo:
+
+html
+Copiar código
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  .destaque {
+    font-weight: bold;
+    color: red;
+  }
+</style>
+</head>
+<body>
+  <p class="destaque">Este texto é destacado.</p>
+  <p>Este texto não é destacado.</p>
+</body>
+</html>
+Sugestão: Utilize classes para estilos que serão aplicados a múltiplos elementos.
+
+
+3. Seletor de ID
+Descrição: Seleciona um elemento com um ID específico. Os IDs começam com um símbolo de hashtag (#).
+
+Exemplo:
+
+html
+Copiar código
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  #unico {
+    background-color: yellow;
+  }
+</style>
+</head>
+<body>
+  <p id="unico">Este parágrafo tem um fundo amarelo.</p>
+  <p>Este parágrafo não tem.</p>
+</body>
+</html>
+Sugestão: Use IDs para estilos que devem ser aplicados a um único elemento específico.
+
+4. Seletor Universal
+Descrição: Seleciona todos os elementos de uma página.
+
+Exemplo:
+
+html
+Copiar código
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+  }
+</style>
+</head>
+<body>
+  <p>Todos os elementos têm margem e padding zero.</p>
+</body>
+</html>
+Sugestão: O seletor universal é útil para resetar estilos padrão.
+
+5. Seletor de Atributo
+Descrição: Seleciona elementos com um atributo específico ou valor de atributo.
+
+Exemplo:
+
+html
+Copiar código
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  a[target="_blank"] {
+    color: green;
+  }
+</style>
+</head>
+<body>
+  <a href="https://www.example.com" target="_blank">Link abre em nova aba e é verde.</a>
+  <a href="https://www.example.com">Link normal.</a>
+</body>
+</html>
+Sugestão: Utilize seletores de atributos para aplicar estilos com base em atributos HTML específicos.
+
+6. Seletor Descendente
+Descrição: Seleciona elementos que são descendentes de um elemento especificado.
+
+Exemplo:
+
+html
+Copiar código
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  div p {
+    color: purple;
+  }
+</style>
+</head>
+<body>
+  <div>
+    <p>Este parágrafo é roxo porque está dentro de um div.</p>
+  </div>
+  <p>Este parágrafo não é roxo.</p>
+</body>
+</html>
+Sugestão: Use seletores descendentes para aplicar estilos apenas a elementos que estão dentro de outros elementos.
+
+7. Seletor de Filho
+Descrição: Seleciona elementos que são filhos diretos de um elemento específico.
+
+Exemplo:
+
+html
+Copiar código
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  ul > li {
+    list-style-type: none;
+  }
+</style>
+</head>
+<body>
+  <ul>
+    <li>Item da lista sem marcador.</li>
+    <li>Outro item da lista sem marcador.</li>
+  </ul>
+  <ol>
+    <li>Item da lista ordenada com marcador.</li>
+  </ol>
+</body>
+</html>
+Sugestão: Use seletores de filhos para garantir que o estilo só seja aplicado aos filhos diretos de um elemento.
+
+8. Seletor de Irmão Adjacente
+Descrição: Seleciona um elemento que é o próximo irmão adjacente de um elemento especificado.
+
+Exemplo:
+
+html
+Copiar código
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  h1 + p {
+    border-top: 1px solid black;
+  }
+</style>
+</head>
+<body>
+  <h1>Título</h1>
+  <p>Este parágrafo tem uma borda superior.</p>
+  <h1>Outro Título</h1>
+  <div>Este div não é afetado.</div>
+  <p>Este parágrafo não é afetado.</p>
+</body>
+</html>
+Sugestão: Use seletores de irmão adjacente para estilizar elementos que aparecem imediatamente após um outro elemento.
+
+Compreender e utilizar esses seletores é fundamental para criar páginas web estilizadas de maneira eficaz e eficiente. Teste cada exemplo e observe como os diferentes seletores podem ser combinados para alcançar o design desejado!
+
+
+
+
+
+
