@@ -155,7 +155,8 @@ Exemplo:
 </body>
 </html>
 Sugestão: Use seletores de filhos para garantir que o estilo só seja aplicado aos filhos diretos de um elemento.
-FILHO Adjacente
+
+7.1.Seletor Filho Adjacente
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -177,7 +178,7 @@ FILHO Adjacente
     <p>Este parágrafo não será afetado porque não é um irmão adjacente de h1.</p>
 </body>
 </html>
-
+7.2.Seletor Irmao Geral
 O seletor irmão geral no CSS é representado pelo símbolo ~ e é utilizado para selecionar todos os elementos que são irmãos de um determinado elemento e aparecem depois dele no código HTML. Ou seja, ele seleciona todos os irmãos subsequentes do mesmo nível hierárquico.
 <!DOCTYPE html>
 <html lang="en">
@@ -203,7 +204,7 @@ Agora, vamos supor que você quer estilizar todos os parágrafos (<p>) que vêm 
     font-weight: bold;
 }
 
-8. Seletor de Irmão Adjacente
+7.3. Seletor de Irmão Adjacente
 Descrição: Seleciona um elemento que é o próximo irmão adjacente de um elemento especificado.
 
 Exemplo:
@@ -225,7 +226,7 @@ Exemplo:
 </body>
 </html>
 Sugestão: Use seletores de irmão adjacente para estilizar elementos que aparecem imediatamente após um outro elemento.
-9. seletor negativo
+8. Seletor negativo
 No CSS, um seletor negativo permite que você selecione elementos que não correspondem a um determinado critério. Uma forma comum de se fazer isso é usando o pseudo-classe :not(), que aplica estilos a todos os elementos que não correspondem ao seletor especificado dentro dos parênteses.
 Imagine que você tem uma lista de itens e deseja estilizar todos os itens da lista, exceto o primeiro. Veja como isso pode ser feito:
 <!DOCTYPE html>
