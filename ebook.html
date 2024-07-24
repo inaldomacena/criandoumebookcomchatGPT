@@ -155,6 +155,53 @@ Exemplo:
 </body>
 </html>
 Sugestão: Use seletores de filhos para garantir que o estilo só seja aplicado aos filhos diretos de um elemento.
+FILHO Adjacente
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Seletor Filho Adjacente</title>
+    <style>
+        h1 + p {
+            color: blue;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Título 1</h1>
+    <p>Este parágrafo será azul e negrito porque é irmão adjacente de h1.</p>
+    <h1>Título 2</h1>
+    <div>Este div não será afetado porque não é um irmão adjacente de h1.</div>
+    <p>Este parágrafo não será afetado porque não é um irmão adjacente de h1.</p>
+</body>
+</html>
+
+O seletor irmão geral no CSS é representado pelo símbolo ~ e é utilizado para selecionar todos os elementos que são irmãos de um determinado elemento e aparecem depois dele no código HTML. Ou seja, ele seleciona todos os irmãos subsequentes do mesmo nível hierárquico.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletor Irmão Geral</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <p class="first">Primeiro parágrafo</p>
+        <p>Segundo parágrafo</p>
+        <p>Terceiro parágrafo</p>
+        <span>Um span</span>
+        <p>Quarto parágrafo</p>
+    </div>
+</body>
+</html>
+Agora, vamos supor que você quer estilizar todos os parágrafos (<p>) que vêm após o parágrafo com a classe first. Você pode usar o seletor irmão geral no seu CSS:
+  .first ~ p {
+    color: red;
+    font-weight: bold;
+}
 
 8. Seletor de Irmão Adjacente
 Descrição: Seleciona um elemento que é o próximo irmão adjacente de um elemento especificado.
@@ -178,6 +225,34 @@ Exemplo:
 </body>
 </html>
 Sugestão: Use seletores de irmão adjacente para estilizar elementos que aparecem imediatamente após um outro elemento.
+9. seletor negativo
+No CSS, um seletor negativo permite que você selecione elementos que não correspondem a um determinado critério. Uma forma comum de se fazer isso é usando o pseudo-classe :not(), que aplica estilos a todos os elementos que não correspondem ao seletor especificado dentro dos parênteses.
+Imagine que você tem uma lista de itens e deseja estilizar todos os itens da lista, exceto o primeiro. Veja como isso pode ser feito:
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Seletor Negativo</title>
+    <style>
+        /* Estiliza todos os itens da lista que NÃO são o primeiro item */
+        li:not(:first-child) {
+            color: blue;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+    </ul>
+</body>
+</html>
+
+
 
 Compreender e utilizar esses seletores é fundamental para criar páginas web estilizadas de maneira eficaz e eficiente. Teste cada exemplo e observe como os diferentes seletores podem ser combinados para alcançar o design desejado!
 
